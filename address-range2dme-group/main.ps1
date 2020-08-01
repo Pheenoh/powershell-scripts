@@ -1,14 +1,12 @@
 # input variables
-$inputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw"
-$outputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # CAREFUL HERE! making this the same as input will overwrite the input
+$inputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # replace with your old dmw path
+$outputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # replace with your old dmw path. CAREFUL HERE! making this the same as input path will overwrite the input file
 [int32]$addr = "0x8038F8B4" # starting address
 [int32]$endaddr = "0x8038F95C" # ending address
-$groupname = "tp_link_wolf_swim"
-$membername = "member_prop"
+$groupname = "tp_link_wolf_swim" # the name that will be generated for the group
+$membername = "member_prop" # the name of the members in the group
 
 $inputobject = Get-Content $inputfilepath| ConvertFrom-Json
-
-
 
 $groupobj = New-Object System.Collections.Generic.List[object]
 $object = New-Object System.Collections.Generic.List[object]
