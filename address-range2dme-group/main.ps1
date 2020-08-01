@@ -1,6 +1,6 @@
 # input variables
 $inputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # replace with your old dmw path
-$outputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # replace with your old dmw path. CAREFUL HERE! making this the same as input path will overwrite the input file
+$outputfilepath = "C:\Users\Pheenoh\Desktop\DME\TP_CleanWatchFile.dmw" # replace with your new dmw path. CAREFUL HERE! making this the same as input path will overwrite the input file
 [int32]$addr = "0x8038F8B4" # starting address
 [int32]$endaddr = "0x8038F95C" # ending address
 $groupname = "tp_link_wolf_swim" # the name that will be generated for the group
